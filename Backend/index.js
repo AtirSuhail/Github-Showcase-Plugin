@@ -15,6 +15,8 @@ app.use(
 app.use(express.json());
 app.use("/user", userRouter);
 
+app.use(express.static("./public"));
+
 app.listen(port, () => {
   console.log(" server started");
 });
