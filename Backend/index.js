@@ -1,5 +1,5 @@
 const express = require("express");
-const product = require("./routers/Router");
+const userRouter = require("./routers/userRouter");
 
 const cors = require("cors");
 
@@ -13,8 +13,7 @@ app.use(
   })
 );
 app.use(express.json());
-app.use("/user", Router);
-
+app.use("/user", userRouter);
 
 app.listen(port, () => {
   console.log(" server started");
