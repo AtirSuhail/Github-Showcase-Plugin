@@ -38,6 +38,7 @@ const DevCard = ({ username }) => {
   if (error) return <div>Error: {error.message}</div>;
 
   return (
+    
     <div class="card">
       <div class="top-section">
         <div class="border">
